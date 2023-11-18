@@ -1,3 +1,4 @@
+#add ignore file 
 tt.*
 .tests
 doc/tags
