@@ -1,13 +1,13 @@
 return {
   {
-    "craftzdog/solarized-osaka.nvim",
-    branch = "osaka",
-    lazy = true,
+    "neanias/everforest-nvim",
+    branch = "main",
+    lazy = false,
     priority = 1000,
-    opts = function()
-      return {
-        transparent = true,
-      }
+    config = function()
+      require("everforest").setup({
+        -- Your config here
+      })
     end,
   },
 }
