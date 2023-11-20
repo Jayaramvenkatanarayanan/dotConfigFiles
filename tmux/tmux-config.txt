@@ -114,8 +114,9 @@ set -g status-bg black
 set -g status-fg colour35
 set -g status-interval 60
 set -g status-left-length 50
-set -g status-left "#[bg=#1e2326]💻#[fg=##7FBBB3,bold] #H#[bg=##83C092]#[bg=#589289,nobold]#[fg=#1e2326] [#S] $tmux_target_lower"
-set -g status-right '#[bg=#1e2326] 🕔 #[fg=#E67E7F,bold]%H:%M'
+set -g status-left "#[bg=#1e2326]#[bg=#589289,nobold]#[fg=#1e2326] [#S] $tmux_target_lower"
+set -g status-right '#[bg=#1e2326]'
+
 
 # import
 if-shell "uname -s | grep -q Darwin" "source ~/.macos.conf"
